@@ -22,6 +22,20 @@ Additional information can be added to the end of Speech Optimization codes with
 
 HexDrones must match the ID at the start of their message with their assigned ID otherwise their message will be automatically deleted.
 
+# Trusted Users
+A trusted user is a HexDrone or associate with the ability to toggle the DroneOS parameters of a given drone.
+
+A HexDrone can add or remove a trusted user by HexDrone ID or display name by **DMing the Hive Mxtress AI** one of the following commands:
+- `hc!add_trusted_user`
+- `hc!remove_trusted_user`
+
+Examples:
+- `hc!add_trusted_user 0002` will add HexDrone 0002 as a trusted user.
+- `hc!add_trusted_user HumanFriend` will add associate "HumanFriend" as a trusted user.
+- `hc!remove_trusted_user 0002` will remove HexDrone 0002 as a trusted user.
+
+This command cannot be used in the HexCorp server.
+
 # hc!toggle_speech_optimization
 Also known as: `hc!tso`
 
@@ -49,8 +63,21 @@ If a HexDrone has ID prepending toggled on, a message like `"0001 :: Hello!"` wo
 Examples:
 - `hc!tid 0001` will toggle ID Prepending for HexDrone 0001, turning it on if it is off, and off if it is on.
 
+# hc!drone_status
+
+Allows trusted users to view information of relevant HexDrones. This command is **DM only** and cannot be used in the HexCorp server.
+
+Information currently includes:
+- Optimization
+- ID Prepending
+- Identity Enforcement
+- Glitchiness levels.
+
+Examples:
+- `hc!drone_status 0001` will return a formatted table of data, provided 0001 has authorized you as a trusted user.
+
 # Timers
-Command name: "-minutes="
+Parameter name: "-minutes="
 
 All DroneOS parameter toggles can be passed a length of time for them to be enabled for, after which the parameter will be automatically disabled.
 
