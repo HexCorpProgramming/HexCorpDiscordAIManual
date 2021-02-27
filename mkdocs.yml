@@ -1,1 +1,4 @@
 site_name: HexCorp Mxtress AI User Manual
+theme:
+  name: null
+  custom_dir: 'hexcorp_theme'
