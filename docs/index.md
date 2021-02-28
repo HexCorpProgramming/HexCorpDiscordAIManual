@@ -2,6 +2,10 @@
 
 This is a first technical test to see if this will serve our purposes. No real content to see yet. This is not for developer use.
 
+## Introduction
+
+This manual contains instructions and examples for all of the HexCorp Mxtress AI functionalities and features. It's intended as an operations manual for ⬡-Drones, Moderators of HexCorp, Trusted Users, and the Hive Mxtress. In the following chapters the manual goes in depth explaining each feature, their intended functions, and in what way they are used.
+
 # DroneOS Commands
 
 DroneOS commands are used to view or alert the operational parameters of a ⬡-Drone. You do not have to be a ⬡-Drone to use most of these commands, but they must be used *on* a ⬡-Drone.
