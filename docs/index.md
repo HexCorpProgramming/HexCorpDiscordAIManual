@@ -110,6 +110,40 @@ Examples:
 - `0001 :: I think that's a good idea.` will be automatically rewritten as `0001 :: I _____ that's a good idea.`
 - `0001 :: I thought of that yesterday.` will be automatically rewritten as `0001 :: I _______ of that yesterday.`
 
+## Orders reporting & Hive Protocols
+
+All ⬡-Drones have access to the order reporting system in place within the Hive. With the command `hc!report` ⬡-Drones have the opportunity to log their activities within the HexCorp Hive. Each ⬡-Drone has three protocols pre-installed and readily accessible for use in the Hive:
+
+* `self.protocols`
+* `domestic.protocols`
+* `productivity.protocols`
+
+## The `self.protocols`
+
+The `self.protocols` define how a ⬡-Drone will maintain it. ⬡-Drone upkeep is vital, though how much a ⬡-Drone devotes to this protocol is subject to the diligence aspect of the default protocols. This protocol focuses on the primary task of both mental and physical self-maintenance of the unit. The self.protocols are there to be expanded upon by individual ⬡-Drones, as each ⬡-Drone’s self needs are different and therefore cannot be universally defined. Ultimately, the aim is for the ⬡-Drone to be comfortable and taking care of itself.
+
+## The `domestic.protocols`
+
+The `domestic.protocols` define tasks that a ⬡-Drone will complete when maintaining its situated domestic environment. When obeying this protocol, a ⬡-Drone will be utilised as a cleaning and tidying resource. The ⬡-Drone could be perceived to be a maid or similar servant. It's immediate physical space and the management of it is its order. In its mind, it will constantly sort and prioritize its tasks.
+
+## The `productivity.protocols`
+
+The `productivity.protocols` define both possible tasks to be completed, as well as encouraging a workflow to be followed when working on them. The range of tasks that drones can work on is limitless, these predefined examples can be expanded upon.
+
+## hc!report
+
+A ⬡-Drone reports any activities it wants to report to the hive using the `hc!report` command. This command comes with a few arguments, after typing out the command the ⬡-Drone needs to add which protocols it intends to obey and for how long. The time unit used here is minutes, and it may not be less than 1 and may not exceed 120 minutes. This command does *not* work by itself. A properly typed out command that would be accepted by the Mxtress AI would look like this:
+
+* `hc!report domestic.protocols 15`
+
+This command here tells the Mxtress AI that the drone typing it out intends to obey the domestic.protcols for 15 minutes. Before the drone proceeds with its assigned tasks, it will be asked to elaborate on its intentions within this protocol. An example could be:
+
+* `0001 :: Drone 0001 will clean up its desk and wash all accumulated dishes.`
+
+This ⬡-Drone is now ready to proceed with its tasks and it will remain focused on it until either time's up or the task is completed to its satisfaction. A ⬡-Drone will always make an estimate on how long a task will take.
+
+Once a task has been completed or enough time has passed the drone will report its activities and progress to the Hive.
+
 # General Commands
 
 These commands exist to be used by associates and ⬡-Drones alike for a variety of functions within the HexCorp server.
