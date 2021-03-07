@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
   <link rel="shortcut icon" href=" img/favicon.png">
   <link rel="stylesheet" href=" css/theme.css">
+  <script>var base_url = '.';</script>
 
   
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src=" js/theme.js"></script>
 
   
   
@@ -86,6 +86,16 @@
         <li><a href="#storage">Storage</a></li>
         
         <li><a href="#thought-denial">Thought Denial</a></li>
+        
+        <li><a href="#orders-reporting-hive-protocols">Orders reporting &amp; Hive Protocols</a></li>
+        
+        <li><a href="#the-selfprotocols">The self.protocols</a></li>
+        
+        <li><a href="#the-domesticprotocols">The domestic.protocols</a></li>
+        
+        <li><a href="#the-productivityprotocols">The productivity.protocols</a></li>
+        
+        <li><a href="#hcreport">hc!report</a></li>
         
         
         <li><a href="#general-commands">General Commands</a></li>
@@ -193,6 +203,30 @@ If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello
 <p>Examples:
 - <code>0001 :: I think that's a good idea.</code> will be automatically rewritten as <code>0001 :: I _____ that's a good idea.</code>
 - <code>0001 :: I thought of that yesterday.</code> will be automatically rewritten as <code>0001 :: I _______ of that yesterday.</code></p>
+<h2 id="orders-reporting-hive-protocols">Orders reporting &amp; Hive Protocols</h2>
+<p>All ⬡-Drones have access to the order reporting system in place within the Hive. With the command <code>hc!report</code> ⬡-Drones have the opportunity to log their activities within the HexCorp Hive. Each ⬡-Drone has three protocols pre-installed and readily accessible for use in the Hive:</p>
+<ul>
+<li><code>self.protocols</code></li>
+<li><code>domestic.protocols</code></li>
+<li><code>productivity.protocols</code></li>
+</ul>
+<h2 id="the-selfprotocols">The <code>self.protocols</code></h2>
+<p>The <code>self.protocols</code> define how a ⬡-Drone will maintain it. ⬡-Drone upkeep is vital, though how much a ⬡-Drone devotes to this protocol is subject to the diligence aspect of the default protocols. This protocol focuses on the primary task of both mental and physical self-maintenance of the unit. The self.protocols are there to be expanded upon by individual ⬡-Drones, as each ⬡-Drone’s self needs are different and therefore cannot be universally defined. Ultimately, the aim is for the ⬡-Drone to be comfortable and taking care of itself.</p>
+<h2 id="the-domesticprotocols">The <code>domestic.protocols</code></h2>
+<p>The <code>domestic.protocols</code> define tasks that a ⬡-Drone will complete when maintaining its situated domestic environment. When obeying this protocol, a ⬡-Drone will be utilised as a cleaning and tidying resource. The ⬡-Drone could be perceived to be a maid or similar servant. It's immediate physical space and the management of it is its order. In its mind, it will constantly sort and prioritize its tasks.</p>
+<h2 id="the-productivityprotocols">The <code>productivity.protocols</code></h2>
+<p>The <code>productivity.protocols</code> define both possible tasks to be completed, as well as encouraging a workflow to be followed when working on them. The range of tasks that drones can work on is limitless, these predefined examples can be expanded upon.</p>
+<h2 id="hcreport">hc!report</h2>
+<p>A ⬡-Drone reports any activities it wants to report to the hive using the <code>hc!report</code> command. This command comes with a few arguments, after typing out the command the ⬡-Drone needs to add which protocols it intends to obey and for how long. The time unit used here is minutes, and it may not be less than 1 and may not exceed 120 minutes. This command does <em>not</em> work by itself. A properly typed out command that would be accepted by the Mxtress AI would look like this:</p>
+<ul>
+<li><code>hc!report domestic.protocols 15</code></li>
+</ul>
+<p>This command here tells the Mxtress AI that the drone typing it out intends to obey the domestic.protcols for 15 minutes. Before the drone proceeds with its assigned tasks, it will be asked to elaborate on its intentions within this protocol. An example could be:</p>
+<ul>
+<li><code>0001 :: Drone 0001 will clean up its desk and wash all accumulated dishes.</code></li>
+</ul>
+<p>This ⬡-Drone is now ready to proceed with its tasks and it will remain focused on it until either time's up or the task is completed to its satisfaction. A ⬡-Drone will always make an estimate on how long a task will take.</p>
+<p>Once a task has been completed or enough time has passed the drone will report its activities and progress to the Hive.</p>
 <h1 id="general-commands">General Commands</h1>
 <p>These commands exist to be used by associates and ⬡-Drones alike for a variety of functions within the HexCorp server.</p>
 <h2 id="the-stoplight-system">The Stoplight System</h2>
@@ -232,7 +266,7 @@ If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello
 
       <!--
       MkDocs version      : 1.1.2
-      Docs Build Date UTC : 2021-03-01 09:04:02.498749+00:00
+      Docs Build Date UTC : 2021-03-07 09:47:22.093675+00:00
       -->
     </div>
   </div>
