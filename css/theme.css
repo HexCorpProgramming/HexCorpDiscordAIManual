@@ -34,7 +34,7 @@ body .active a {
   list-style-type: none;
   margin: 0;
 }
-.top-bar .search input {
+input {
   color: #000000;
 }
 .content {
