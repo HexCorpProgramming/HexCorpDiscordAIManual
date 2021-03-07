@@ -40,6 +40,10 @@ Examples:
 
 This command cannot be used in the HexCorp server.
 
+### Hive Mxtress as Trusted User
+
+The Hive Mxtress is regarded as a trusted user for all drones within the Hive, as they are the one in charge of HexCorp and all of its assets.
+
 ## hc!toggle_speech_optimization
 Also known as: `hc!tso`
 
@@ -59,6 +63,10 @@ Allows trusted users to toggle whether a ⬡-Drone's avatar is automatically rep
 
 Examples:
 - `hc!tei 0001` will toggle Identity Enforcement for ⬡-Drone 0001, turning it on if it was off, and off if it was on.
+
+### The Hive & Enforced Identity
+
+Within the hive channels all drones automatically have their identities enforced.
 
 ## hc!toggle_id_prepending
 Also known as: `hc!tid`
