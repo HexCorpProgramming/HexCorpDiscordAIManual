@@ -1,5 +1,12 @@
 site_name: HexCorp Mxtress AI User Manual
+site_url: https://hexcorpprogramming.github.io/HexCorpDiscordAIManual
+
 repo_url: https://github.com/HexCorpProgramming/HexCorpDiscordAIManual
+
 theme:
   name: null
   custom_dir: 'hexcorp_theme'
+  include_search_page: true
+
+plugins:
+  - search
