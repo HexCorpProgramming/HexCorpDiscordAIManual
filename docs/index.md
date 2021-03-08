@@ -158,6 +158,13 @@ These commands exist to be used by associates and ⬡-Drones alike for a variety
 
 ## The Stoplight System
 
+The Stoplight System is the safewords of HexCorp. They override any configurations that might be currently in effect and the HexCorp Mxtress AI will not alter or change any messages that contain any of the following emojis:
+
+- `Green (emoji name :green_circle:)`: Everything's going fine and there's no discomfort.
+- `Yellow (emoji name :yellow_circle)`: There's discomfort try something else, or change topic.
+- `Red (emoji name :red_circle:)`: This needs to stop immediately. Great discomfort.
+- `Clock(emoji name :alarm_clock)`: This not only needs to stop immediately but moderators will also be alerted to the conversation.
+
 ## Ask the Hive Mxtress AI
 
 ## hc!emote
@@ -182,12 +189,23 @@ These commands are for exclusive use by the HexCorp moderation team.
 
 # hc!emergency_release
 
+This command is used to deactivate all configurations on a drone. A ⬡-Drone may ask any moderator in chat, direct messages, or through the Moderation Interface bot to have their confugurations disabled for any reason.
+
 # Hive Mxtress Commands
 
 These commands are for exclusive use by the Hive Mxtress, primarily to tease cute little drones.
 
 # hc!amplify
 
+This command is available to the Hive Mxtress in order to send messages as any drone. There is no upper limit to how many drones the Hive Mxtress can send messages through.
+
 # hc!rename
 
+This command allows the Hive Mxtress to assign a drone a new ID. This can be requested to the Hive Mxtress, as drones are not permitted to change their nicknames within the Hive.
+
 # hc!release
+
+This command allows the Hive Mxtress to release any stored drones from the storage facilities before they are automatically released.
+
+Example: 
+- `hc!release 0001` would release 0001 from the storage facilities before its time inside is up.
