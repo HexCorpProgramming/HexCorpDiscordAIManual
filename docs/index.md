@@ -207,6 +207,10 @@ Examples:
 
 This command allows the Hive Mxtress to assign a drone a new ID. This can be requested to the Hive Mxtress, as drones are not permitted to change their nicknames within the Hive.
 
+Examples:
+- `hc!rename 5890 5891`
+- `hc!rename 0001 0002`
+
 ## hc!release
 
 This command allows the Hive Mxtress to release any stored drones from the storage facilities before they are automatically released.
