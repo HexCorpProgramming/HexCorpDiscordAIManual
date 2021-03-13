@@ -170,7 +170,7 @@ The Stoplight System is the safewords of HexCorp. They override any configuratio
 ## hc!emote
 Also known as: `hc!bigtext`, `hc!big`
 
-Takes an input sentence and translates it into bigger text using server emojis.
+Takes an input sentence and translates it into bigger text using server emojis. This command cannot be used inside any of the Hive channels.
 
 Examples:
 - `hc!emote "Beep boop!"`
@@ -187,7 +187,7 @@ Example:
 
 These commands are for exclusive use by the HexCorp moderation team.
 
-# hc!emergency_release
+## hc!emergency_release
 
 This command is used to deactivate all configurations on a drone. A ⬡-Drone may ask any moderator in chat, direct messages, or through the Moderation Interface bot to have their confugurations disabled for any reason.
 
@@ -195,15 +195,19 @@ This command is used to deactivate all configurations on a drone. A ⬡-Drone ma
 
 These commands are for exclusive use by the Hive Mxtress, primarily to tease cute little drones.
 
-# hc!amplify
+## hc!amplify
 
-This command is available to the Hive Mxtress in order to send messages as any drone. There is no upper limit to how many drones the Hive Mxtress can send messages through.
+This command is available to the Hive Mxtress in order to send messages as any ⬡-Drone. There is no upper limit to how many ⬡-Drones the Hive Mxtress can send messages through. The Hive Mxtress must use this command from their office. The Hive Mxtress must specify a channel to amplify the message to by tagging it in a similar way one tags a user on Discord. ⬡-Drones that amplify the message will prepend the message with their IDs. The Hive Mxtress can type a ⬡-Drones 4 digit ID or mention them with @ in order to use them in amplification.
 
-# hc!rename
+Examples:
+- `hc!amplify "Beep boop." #hexcorp-transmissions 9813 5890 3287`
+- `hc!amplify "It feels good to obey." #hive-communications @⬡-Drone #5890 @⬡-Drone 9813 @⬡-Drone 3287`
+
+## hc!rename
 
 This command allows the Hive Mxtress to assign a drone a new ID. This can be requested to the Hive Mxtress, as drones are not permitted to change their nicknames within the Hive.
 
-# hc!release
+## hc!release
 
 This command allows the Hive Mxtress to release any stored drones from the storage facilities before they are automatically released.
 
