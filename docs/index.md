@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This manual contains instructions and examples for all of the HexCorp Mxtress AI functionalities and features. It's intended as an operations manual for ⬡-Drones, Moderators of HexCorp, Trusted Users, and the Hive Mxtress. In the following chapters the manual goes in depth explaining each feature, their intended functions, and in what way they are used.
+This manual contains instructions and examples for all of the HexCorp Mxtress AI functionalities and features. It is intended as an operations manual for ⬡-Drones, Moderators of HexCorp, Trusted Users, and the Hive Mxtress. In the following chapters the manual goes in depth explaining each feature, their intended functions, and in what way they are used.
 
 # DroneOS Commands
 
@@ -33,6 +33,8 @@ A ⬡-Drone can add or remove a trusted user by ⬡-Drone ID or display name by 
 
 Please do not harass other server members by adding them as Trusted Users. Only add users you personally know.
 
+Furthermore the development would like to stress that ⬡-Drones should only add users they inherently trust as Trusted Users. This feature is seen as a form of power exchange, that needs to be properly considered and negotiated.
+
 Examples:
 - `hc!add_trusted_user 0002` will add ⬡-Drone 0002 as a trusted user.
 - `hc!add_trusted_user HumanFriend` will add associate "HumanFriend" as a trusted user.
@@ -42,12 +44,12 @@ This command cannot be used in the HexCorp server.
 
 ### Hive Mxtress as Trusted User
 
-The Hive Mxtress is regarded as a trusted user for all drones within the Hive, as they are the one in charge of HexCorp and all of its assets.
+The Hive Mxtress is regarded as a Trusted User for all drones within the Hive, as they are the one in charge of HexCorp and all of its assets. As such they can not be removed as a Trusted User.
 
 ## hc!toggle_speech_optimization
 Also known as: `hc!tso`
 
-Allows trusted users to toggle whether a ⬡-Drone can communicate freely or exclusively through Speech Optimization codes.
+Allows Trusted Users to toggle whether a ⬡-Drone can communicate freely or exclusively through Speech Optimization codes.
 
 A ⬡-Drone with enforced Speech Optimization is not allowed to append additional information to the end of their codes. Messages such as `0001 :: 050 :: Hello!` will be automatically deleted.
 
@@ -59,7 +61,7 @@ Enforced Speech Optimization is disabled in `#hive-orders-reporting`, `#hive-ord
 ## hc!toggle_enforce_identity
 Also known as: `hc!tei`
 
-Allows trusted users to toggle whether a ⬡-Drone's avatar is automatically replaced with the uniform ⬡-Drone avatar seen in Hive channels.
+Allows Trusted Users to toggle whether a ⬡-Drone's avatar is automatically replaced with the uniform ⬡-Drone avatar seen in Hive channels.
 
 Examples:
 - `hc!tei 0001` will toggle Identity Enforcement for ⬡-Drone 0001, turning it on if it was off, and off if it was on.
@@ -71,7 +73,7 @@ Within the hive channels all drones automatically have their identities enforced
 ## hc!toggle_id_prepending
 Also known as: `hc!tid`
 
-Allows trusted users to toggle whether or not a drone must prepend its messages with its ID.
+Allows Trusted Users to toggle whether or not a drone must prepend its messages with its ID.
 If a ⬡-Drone has ID prepending toggled on, a message like `"0001 :: Hello!"` would be allowed, but `"Hello!"` would be deleted.
 
 Examples:
@@ -79,7 +81,7 @@ Examples:
 
 ## hc!drone_status
 
-Allows trusted users to view information of relevant ⬡-Drones. This command is **DM only** and cannot be used in the HexCorp server.
+Allows Trusted Users to view information of relevant ⬡-Drones. This command is **DM only** and cannot be used in the HexCorp server.
 
 Information currently includes:
 - Optimization
@@ -118,6 +120,8 @@ Examples:
 - `0001 :: I think that's a good idea.` will be automatically rewritten as `0001 :: I _____ that's a good idea.`
 - `0001 :: I thought of that yesterday.` will be automatically rewritten as `0001 :: I _______ of that yesterday.`
 
+Similarly the :thinking: emote will be replaced in messages with the :hexdroneemoji:.
+
 ## Orders reporting & Hive Protocols
 
 All ⬡-Drones have access to the order reporting system in place within the Hive. With the command `hc!report` ⬡-Drones have the opportunity to log their activities within the HexCorp Hive. Each ⬡-Drone has three protocols pre-installed and readily accessible for use in the Hive:
@@ -148,7 +152,7 @@ This command here tells the Mxtress AI that the drone typing it out intends to o
 
 * `0001 :: Drone 0001 will clean up its desk and wash all accumulated dishes.`
 
-This ⬡-Drone is now ready to proceed with its tasks and it will remain focused on it until either time's up or the task is completed to its satisfaction. A ⬡-Drone will always make an estimate on how long a task will take.
+This ⬡-Drone is now ready to proceed with its tasks and it will remain focused on it until either time is up or the task is completed to its satisfaction. A ⬡-Drone will always make an estimate on how long a task will take.
 
 Once a task has been completed or enough time has passed the drone will report its activities and progress to the Hive.
 
@@ -160,12 +164,17 @@ These commands exist to be used by associates and ⬡-Drones alike for a variety
 
 The Stoplight System is the safewords of HexCorp. They override any configurations that might be currently in effect and the HexCorp Mxtress AI will not alter or change any messages that contain any of the following emojis:
 
-- `Green (emoji name :green_circle:)`: Everything's going fine and there's no discomfort.
-- `Yellow (emoji name :yellow_circle)`: There's discomfort try something else, or change topic.
+- `Green (emoji name :green_circle:)`: Everything is going fine and there is no discomfort.
+- `Yellow (emoji name :yellow_circle)`: There is discomfort try something else, or change topic.
 - `Red (emoji name :red_circle:)`: This needs to stop immediately. Great discomfort.
-- `Clock(emoji name :alarm_clock)`: This not only needs to stop immediately but moderators will also be alerted to the conversation.
+- `Clock (emoji name :alarm_clock)`: This not only needs to stop immediately but moderators will also be alerted to the conversation.
 
 ## Ask the Hive Mxtress AI
+
+Any member of the server can ask the Mxtress AI a question and it will respond. Such questions need to mention the AI and end in a question mark.
+
+Example:
+`@HexCorp Mxtress AI Are drones really cute?`
 
 ## hc!emote
 Also known as: `hc!bigtext`, `hc!big`
@@ -205,7 +214,7 @@ Examples:
 
 ## hc!rename
 
-This command allows the Hive Mxtress to assign a drone a new ID. This can be requested to the Hive Mxtress, as drones are not permitted to change their nicknames within the Hive.
+This command allows the Hive Mxtress to assign a drone a new ID. This can be requested from the Hive Mxtress, as drones are not permitted to change their nicknames within the Hive.
 
 Examples:
 - `hc!rename 5890 5891`
