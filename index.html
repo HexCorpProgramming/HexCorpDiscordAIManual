@@ -68,6 +68,17 @@
         <li><a href="#introduction">Introduction</a></li>
         
         
+        <li><a href="#-drones">⬡-Drones</a></li>
+        
+        <li><a href="#temporary-dronification">Temporary Dronification</a></li>
+        
+        <li><a href="#permanent-dronification">Permanent Dronification</a></li>
+        
+        <li><a href="#id-assignment">ID assignment</a></li>
+        
+        <li><a href="#unassignment">Unassignment</a></li>
+        
+        
         <li><a href="#droneos-commands">DroneOS Commands</a></li>
         
         <li><a href="#speech-optimization">Speech Optimization</a></li>
@@ -112,18 +123,14 @@
         
         <li><a href="#moderation-commands">Moderation Commands</a></li>
         
-        
         <li><a href="#hcemergency_release">hc!emergency_release</a></li>
         
         
         <li><a href="#hive-mxtress-commands">Hive Mxtress Commands</a></li>
         
-        
         <li><a href="#hcamplify">hc!amplify</a></li>
         
-        
         <li><a href="#hcrename">hc!rename</a></li>
-        
         
         <li><a href="#hcrelease">hc!release</a></li>
         
@@ -136,75 +143,122 @@
       
       <h1 id="home">Home</h1>
 <h2 id="introduction">Introduction</h2>
-<p>This manual contains instructions and examples for all of the HexCorp Mxtress AI functionalities and features. It's intended as an operations manual for ⬡-Drones, Moderators of HexCorp, Trusted Users, and the Hive Mxtress. In the following chapters the manual goes in depth explaining each feature, their intended functions, and in what way they are used.</p>
+<p>This manual contains instructions and examples for all of the HexCorp Mxtress AI functionalities and features. It is intended as an operations manual for ⬡-Drones, Moderators of HexCorp, Trusted Users, and the Hive Mxtress. In the following chapters the manual goes in depth explaining each feature, their intended functions, and in what way they are used.</p>
+<h1 id="-drones">⬡-Drones</h1>
+<p>⬡-Drones are the members of the server that have left behind their identity to become just another small part of the greater Hive. Drones join the Hive on their own volition and will always maintain themselves. This can mean that they leave the Hive again if that is better for them.</p>
+<p>Becoming a ⬡-Drone is something that should be thought through carefully. User should consider that they will shed some of their individuality, which can be uncomfortable. Of course all ⬡-Drones can always reach out to the moderation team if they feel uncomfortable.</p>
+<h2 id="temporary-dronification">Temporary Dronification</h2>
+<p>If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves or another Associate, the Hive Mxtress or a ⬡-Drone can use the command <code>hc!temporarily_dronify</code> to turn the Associate into a ⬡-Drone for a few hours.</p>
+<p>Example:</p>
+<ul>
+<li><code>hc!add_trusted_user @AssociatesName 6</code></li>
+</ul>
+<p>This will make the AI ask the target Associate if they want to be turned into a drone for the coming 6 hours. This is a safety feature to insure consent. The target Associate needs to reply with <code>y</code> to the question by the AI to get turned into a drone. They can ignore the question or reply with <code>n</code> to indicate no consent and the Associate will not become a drone.</p>
+<p>If they agree, they will be turned into a ⬡-Drone for the specified time and the user that initiated the process will be added as a Trusted User (more information below). They can now interact with the server and the Hive just like any other ⬡-Drone.</p>
+<p>After the time is up, the temporary ⬡-Drone will be turned back into an Associate. If they were under the influence of some DroneOS configuration they will be freed of that as well.</p>
+<h2 id="permanent-dronification">Permanent Dronification</h2>
+<p>If an Associate wants to become a ⬡-Drone for a longer period, they can post the message <code>I submit myself to the HexCorp Drone Hive.</code> in the channel #drone-hive-assignment.</p>
+<p>To make sure new Associates have understood the role of ⬡-Drones in the community and the server rules this is only allowed, if the Associate has been on the server for at least two days.</p>
+<h2 id="id-assignment">ID assignment</h2>
+<p>When an Associate is turned into a ⬡-Drone the AI will look for a 4-digit number in the Associates nickname to use as the drone ID. If there is no such number one is drawn at random. If there is such a number in the nickname but it is already in use by another drone the AI responds with an error message.</p>
+<h2 id="unassignment">Unassignment</h2>
+<p>Any ⬡-Drone can at every point DM the Hive Mxtress AI the command <code>hc!unassign</code> to be turned back into an Associate. This feature is intended to ensure safety, comfort and consent.</p>
 <h1 id="droneos-commands">DroneOS Commands</h1>
 <p>DroneOS commands are used to view or alert the operational parameters of a ⬡-Drone. You do not have to be a ⬡-Drone to use most of these commands, but they must be used <em>on</em> a ⬡-Drone.</p>
 <h2 id="speech-optimization">Speech Optimization</h2>
 <p>Speech optimization is a communication enhancement tool usable by ⬡-Drones. Associates do not have access to this functionality.</p>
 <p>A ⬡-Drone can convert a short, three digit Speech Optimzation code into a complete Speech Optimization message.</p>
 <p>A <a href="https://www.hexcorp.net/drone-status-codes">full list of Speech Optimization codes</a> can be found on the official HexCorp website.</p>
-<p>Examples:
-- <code>0001 :: 200</code> is automatically converted to: <code>0001 :: Code 200 :: Response :: Affirmative.</code>
-- <code>0001 :: 500</code> becomes <code>0001 :: Code 500 :: Response :: Negative.</code></p>
-<p>Additional information can be added to the end of Speech Optimization codes with the following syntax:
-- <code>0001 :: 052 :: How are you feeling?</code> becomes <code>0001 :: Code 052 :: Query :: How are you feeling?</code></p>
+<p>Examples:</p>
+<ul>
+<li><code>0001 :: 200</code> is automatically converted to: <code>0001 :: Code 200 :: Response :: Affirmative.</code></li>
+<li><code>0001 :: 500</code> becomes <code>0001 :: Code 500 :: Response :: Negative.</code></li>
+</ul>
+<p>Additional information can be added to the end of Speech Optimization codes with the following syntax:</p>
+<ul>
+<li><code>0001 :: 052 :: How are you feeling?</code> becomes <code>0001 :: Code 052 :: Query :: How are you feeling?</code></li>
+</ul>
 <p>⬡-Drones must match the ID at the start of their message with their assigned ID otherwise their message will be automatically deleted.</p>
 <h2 id="trusted-users">Trusted Users</h2>
 <p>A trusted user is a ⬡-Drone or associate with the ability to toggle the DroneOS parameters of a given drone.</p>
-<p>A ⬡-Drone can add or remove a trusted user by ⬡-Drone ID or display name by <strong>DMing the Hive Mxtress AI</strong> one of the following commands:
-- <code>hc!add_trusted_user</code>
-- <code>hc!remove_trusted_user</code></p>
+<p>A ⬡-Drone can add or remove a trusted user by ⬡-Drone ID or display name by <strong>DMing the Hive Mxtress AI</strong> one of the following commands:</p>
+<ul>
+<li><code>hc!add_trusted_user</code></li>
+<li><code>hc!remove_trusted_user</code></li>
+</ul>
 <p>Please do not harass other server members by adding them as Trusted Users. Only add users you personally know.</p>
-<p>Examples:
-- <code>hc!add_trusted_user 0002</code> will add ⬡-Drone 0002 as a trusted user.
-- <code>hc!add_trusted_user HumanFriend</code> will add associate "HumanFriend" as a trusted user.
-- <code>hc!remove_trusted_user 0002</code> will remove ⬡-Drone 0002 as a trusted user.</p>
+<p>Furthermore the development would like to stress that ⬡-Drones should only add users they inherently trust as Trusted Users. This feature is seen as a form of power exchange, that needs to be properly considered and negotiated.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!add_trusted_user 0002</code> will add ⬡-Drone 0002 as a trusted user.</li>
+<li><code>hc!add_trusted_user HumanFriend</code> will add associate "HumanFriend" as a trusted user.</li>
+<li><code>hc!remove_trusted_user 0002</code> will remove ⬡-Drone 0002 as a trusted user.</li>
+</ul>
 <p>This command cannot be used in the HexCorp server.</p>
+<h3 id="hive-mxtress-as-trusted-user">Hive Mxtress as Trusted User</h3>
+<p>The Hive Mxtress is regarded as a Trusted User for all drones within the Hive, as they are the one in charge of HexCorp and all of its assets. As such they can not be removed as a Trusted User.</p>
 <h2 id="hctoggle_speech_optimization">hc!toggle_speech_optimization</h2>
 <p>Also known as: <code>hc!tso</code></p>
-<p>Allows trusted users to toggle whether a ⬡-Drone can communicate freely or exclusively through Speech Optimization codes.</p>
+<p>Allows Trusted Users to toggle whether a ⬡-Drone can communicate freely or exclusively through Speech Optimization codes.</p>
 <p>A ⬡-Drone with enforced Speech Optimization is not allowed to append additional information to the end of their codes. Messages such as <code>0001 :: 050 :: Hello!</code> will be automatically deleted.</p>
-<p>Examples:
-- <code>hc!tso 0001</code> will toggle Speech Optimization for ⬡-Drone 0001, turning it on if it was off, and off if it was on.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!tso 0001</code> will toggle Speech Optimization for ⬡-Drone 0001, turning it on if it was off, and off if it was on.</li>
+</ul>
 <p>Enforced Speech Optimization is disabled in <code>#hive-orders-reporting</code>, <code>#hive-orders-completion</code>, <code>#hive-storage-facility</code>, and <code>#hive-repetitions</code>, so ⬡-Drones can use those channels while optimized.</p>
 <h2 id="hctoggle_enforce_identity">hc!toggle_enforce_identity</h2>
 <p>Also known as: <code>hc!tei</code></p>
-<p>Allows trusted users to toggle whether a ⬡-Drone's avatar is automatically replaced with the uniform ⬡-Drone avatar seen in Hive channels.</p>
-<p>Examples:
-- <code>hc!tei 0001</code> will toggle Identity Enforcement for ⬡-Drone 0001, turning it on if it was off, and off if it was on.</p>
+<p>Allows Trusted Users to toggle whether a ⬡-Drone's avatar is automatically replaced with the uniform ⬡-Drone avatar seen in Hive channels.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!tei 0001</code> will toggle Identity Enforcement for ⬡-Drone 0001, turning it on if it was off, and off if it was on.</li>
+</ul>
+<h3 id="the-hive-enforced-identity">The Hive &amp; Enforced Identity</h3>
+<p>Within the hive channels all drones automatically have their identities enforced.</p>
 <h2 id="hctoggle_id_prepending">hc!toggle_id_prepending</h2>
 <p>Also known as: <code>hc!tid</code></p>
-<p>Allows trusted users to toggle whether or not a drone must prepend its messages with its ID.
+<p>Allows Trusted Users to toggle whether or not a drone must prepend its messages with its ID.
 If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello!"</code> would be allowed, but <code>"Hello!"</code> would be deleted.</p>
-<p>Examples:
-- <code>hc!tid 0001</code> will toggle ID Prepending for ⬡-Drone 0001, turning it on if it is off, and off if it is on.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!tid 0001</code> will toggle ID Prepending for ⬡-Drone 0001, turning it on if it is off, and off if it is on.</li>
+</ul>
 <h2 id="hcdrone_status">hc!drone_status</h2>
-<p>Allows trusted users to view information of relevant ⬡-Drones. This command is <strong>DM only</strong> and cannot be used in the HexCorp server.</p>
+<p>Allows Trusted Users to view information of relevant ⬡-Drones. This command is <strong>DM only</strong> and cannot be used in the HexCorp server.</p>
 <p>Information currently includes:
 - Optimization
 - ID Prepending
 - Identity Enforcement
 - Glitchiness levels.</p>
-<p>Examples:
-- <code>hc!drone_status 0001</code> will return a formatted table of data, provided 0001 has authorized you as a trusted user.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!drone_status 0001</code> will return a formatted table of data, provided 0001 has authorized you as a trusted user.</li>
+</ul>
 <h2 id="timers">Timers</h2>
 <p>Parameter name: "-minutes="</p>
 <p>All DroneOS parameter toggles can be passed a length of time for them to be enabled for, after which the parameter will be automatically disabled.</p>
-<p>Examples:
-- <code>hc!tid 0001 -minutes=30</code> will enforce ⬡-Drone 0001's identity with the uniform ⬡-Drone avatar for 30 minutes.
-- <code>hc!tso 0001 -minutes=30</code> will only allow ⬡-Drone 0001 to communicate using Speech Optimization codes for 30 minutes.
-- <code>hc!tid 0001 -minutes=30</code> will force ⬡-Drone 0001 to prepend <code>0001 ::</code> to its messages for 30 minutes.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!tid 0001 -minutes=30</code> will enforce ⬡-Drone 0001's identity with the uniform ⬡-Drone avatar for 30 minutes.</li>
+<li><code>hc!tso 0001 -minutes=30</code> will only allow ⬡-Drone 0001 to communicate using Speech Optimization codes for 30 minutes.</li>
+<li><code>hc!tid 0001 -minutes=30</code> will force ⬡-Drone 0001 to prepend <code>0001 ::</code> to its messages for 30 minutes.</li>
+</ul>
 <h2 id="storage">Storage</h2>
 <p>A ⬡-Drone can store itself or any other consenting ⬡-Drone away in the <code>#hive-storage-chambers</code> via the <code>#hive-storage-facility</code>. ⬡-Drones that have been stored will be unable to view or message any server channels until they are released. </p>
 <p>The syntax used is similar to Speech Optimization.</p>
-<p>Examples:
-- <code>0001 :: 0002 :: 8 :: Being a naughty drone.</code> will store 0002 for 8 hours, notifying it that is has been stored for "being a naughty drone."
-- <code>0001 :: 0001 :: 6 :: Recharge.</code> will store 0001 for 6 hours, notifying it that it has been stored by itself so it can recharge.</p>
+<p>Examples:</p>
+<ul>
+<li><code>0001 :: 0002 :: 8 :: Being a naughty drone.</code> will store 0002 for 8 hours, notifying it that is has been stored for "being a naughty drone."</li>
+<li><code>0001 :: 0001 :: 6 :: Recharge.</code> will store 0001 for 6 hours, notifying it that it has been stored by itself so it can recharge.</li>
+</ul>
 <h2 id="thought-denial">Thought Denial</h2>
 <p>⬡-Drones are forbidden from including the words "think" and "thought" in their messages, such occurrences will be automatically expunged.</p>
-<p>Examples:
-- <code>0001 :: I think that's a good idea.</code> will be automatically rewritten as <code>0001 :: I _____ that's a good idea.</code>
-- <code>0001 :: I thought of that yesterday.</code> will be automatically rewritten as <code>0001 :: I _______ of that yesterday.</code></p>
+<p>Examples:</p>
+<ul>
+<li><code>0001 :: I think that's a good idea.</code> will be automatically rewritten as <code>0001 :: I _____ that's a good idea.</code></li>
+<li><code>0001 :: I thought of that yesterday.</code> will be automatically rewritten as <code>0001 :: I _______ of that yesterday.</code></li>
+</ul>
+<p>Similarly the :thinking: emote will be replaced in messages with the :hexdroneemoji:.</p>
 <h2 id="orders-reporting-hive-protocols">Orders reporting &amp; Hive Protocols</h2>
 <p>All ⬡-Drones have access to the order reporting system in place within the Hive. With the command <code>hc!report</code> ⬡-Drones have the opportunity to log their activities within the HexCorp Hive. Each ⬡-Drone has three protocols pre-installed and readily accessible for use in the Hive:</p>
 <ul>
@@ -227,30 +281,64 @@ If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello
 <ul>
 <li><code>0001 :: Drone 0001 will clean up its desk and wash all accumulated dishes.</code></li>
 </ul>
-<p>This ⬡-Drone is now ready to proceed with its tasks and it will remain focused on it until either time's up or the task is completed to its satisfaction. A ⬡-Drone will always make an estimate on how long a task will take.</p>
+<p>This ⬡-Drone is now ready to proceed with its tasks and it will remain focused on it until either time is up or the task is completed to its satisfaction. A ⬡-Drone will always make an estimate on how long a task will take.</p>
 <p>Once a task has been completed or enough time has passed the drone will report its activities and progress to the Hive.</p>
 <h1 id="general-commands">General Commands</h1>
 <p>These commands exist to be used by associates and ⬡-Drones alike for a variety of functions within the HexCorp server.</p>
 <h2 id="the-stoplight-system">The Stoplight System</h2>
+<p>The Stoplight System is the safewords of HexCorp. They override any configurations that might be currently in effect and the HexCorp Mxtress AI will not alter or change any messages that contain any of the following emojis:</p>
+<ul>
+<li><code>Green (emoji name :green_circle:)</code>: Everything is going fine and there is no discomfort.</li>
+<li><code>Yellow (emoji name :yellow_circle)</code>: There is discomfort try something else, or change topic.</li>
+<li><code>Red (emoji name :red_circle:)</code>: This needs to stop immediately. Great discomfort.</li>
+<li><code>Clock (emoji name :alarm_clock)</code>: This not only needs to stop immediately but moderators will also be alerted to the conversation.</li>
+</ul>
 <h2 id="ask-the-hive-mxtress-ai">Ask the Hive Mxtress AI</h2>
+<p>Any member of the server can ask the Mxtress AI a question and it will respond. Such questions need to mention the AI and end in a question mark.</p>
+<p>Example:</p>
+<ul>
+<li><code>@HexCorp Mxtress AI Are drones really cute?</code></li>
+</ul>
 <h2 id="hcemote">hc!emote</h2>
 <p>Also known as: <code>hc!bigtext</code>, <code>hc!big</code></p>
-<p>Takes an input sentence and translates it into bigger text using server emojis.</p>
-<p>Examples:
-- <code>hc!emote "Beep boop!"</code>
-- <code>hc!big "Hello world!"</code></p>
+<p>Takes an input sentence and translates it into bigger text using server emojis. This command cannot be used inside any of the Hive channels.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!emote "Beep boop!"</code></li>
+<li><code>hc!big "Hello world!"</code></li>
+</ul>
 <h2 id="hcrequest_voice_role">hc!request_voice_role</h2>
 <p>Gives voice role and access to HexCorp voice channels if you have been a server member for more than 2 weeks. This command is <strong>DM only</strong> and cannot be used in the HexCorp server.</p>
-<p>Example:
-- <code>hc!request_voice_role</code></p>
+<p>Example:</p>
+<ul>
+<li><code>hc!request_voice_role</code></li>
+</ul>
 <h1 id="moderation-commands">Moderation Commands</h1>
 <p>These commands are for exclusive use by the HexCorp moderation team.</p>
-<h1 id="hcemergency_release">hc!emergency_release</h1>
+<h2 id="hcemergency_release">hc!emergency_release</h2>
+<p>This command is used to deactivate all configurations on a drone. A ⬡-Drone may ask any moderator in chat, direct messages, or through the Moderation Interface bot to have their confugurations disabled for any reason.</p>
 <h1 id="hive-mxtress-commands">Hive Mxtress Commands</h1>
 <p>These commands are for exclusive use by the Hive Mxtress, primarily to tease cute little drones.</p>
-<h1 id="hcamplify">hc!amplify</h1>
-<h1 id="hcrename">hc!rename</h1>
-<h1 id="hcrelease">hc!release</h1>
+<h2 id="hcamplify">hc!amplify</h2>
+<p>This command is available to the Hive Mxtress in order to send messages as any ⬡-Drone. There is no upper limit to how many ⬡-Drones the Hive Mxtress can send messages through. The Hive Mxtress must use this command from their office. The Hive Mxtress must specify a channel to amplify the message to by tagging it in a similar way one tags a user on Discord. ⬡-Drones that amplify the message will prepend the message with their IDs. The Hive Mxtress can type a ⬡-Drones 4 digit ID or mention them with @ in order to use them in amplification.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!amplify "Beep boop." #hexcorp-transmissions 9813 5890 3287</code></li>
+<li><code>hc!amplify "It feels good to obey." #hive-communications @⬡-Drone #5890 @⬡-Drone 9813 @⬡-Drone 3287</code></li>
+</ul>
+<h2 id="hcrename">hc!rename</h2>
+<p>This command allows the Hive Mxtress to assign a drone a new ID. This can be requested from the Hive Mxtress, as drones are not permitted to change their nicknames within the Hive.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!rename 5890 5891</code></li>
+<li><code>hc!rename 0001 0002</code></li>
+</ul>
+<h2 id="hcrelease">hc!release</h2>
+<p>This command allows the Hive Mxtress to release any stored drones from the storage facilities before they are automatically released.</p>
+<p>Example: </p>
+<ul>
+<li><code>hc!release 0001</code> would release 0001 from the storage facilities before its time inside is up.</li>
+</ul>
       
     </div>
   </div>
@@ -268,7 +356,7 @@ If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello
 
       <!--
       MkDocs version      : 1.1.2
-      Docs Build Date UTC : 2021-03-07 10:10:12.998121+00:00
+      Docs Build Date UTC : 2021-03-14 14:12:40.395518+00:00
       -->
     </div>
   </div>
