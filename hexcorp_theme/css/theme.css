@@ -1,7 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-  background-color: #221c26;
+  background-color: #1a161d;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 body a {
   color: #FF66FF;
@@ -17,60 +20,66 @@ body .active a {
   color: #ffffff;
   font-weight: bold;
 }
-.top-bar {
+body .top-bar {
   background-color: #1a161d;
   padding: 1em;
   display: flex;
   flex-direction: row;
+  height: 1em;
 }
-.top-bar .site-name {
+body .top-bar .site-name {
   align-self: center;
 }
-.top-bar .nav {
+body .top-bar .nav {
   flex-grow: 1;
   align-self: center;
 }
-.top-bar .nav ul {
+body .top-bar .nav ul {
   list-style-type: none;
   margin: 0;
 }
-input {
-  color: #000000;
-}
-.content {
+body .content {
   display: flex;
   flex-direction: row;
+  flex-grow: 0;
+  height: calc(100vh - 6em);
 }
-.content .table-of-contents {
+body .content .table-of-contents {
   background-color: #1a161d;
   padding: 1em;
   flex-grow: 0;
   flex-shrink: 0;
+  overflow-y: auto;
 }
-.content .table-of-contents li {
+body .content .table-of-contents li {
   padding-left: 0.6em;
 }
-.content .table-of-contents li ~ li {
+body .content .table-of-contents li ~ li {
   padding-top: 0.2em;
 }
-.content .table-of-contents li::marker {
+body .content .table-of-contents li::marker {
   content: '⬡';
 }
-.content .page-content {
+body .content .page-content {
   border: 1px solid #FF66FF;
+  background-color: #221c26;
   border-right: 0;
   padding: 1em;
-  flex-grow: 1;
+  overflow-y: auto;
 }
-.footer {
+body .footer {
   background-color: #1a161d;
   padding: 1em;
+  height: 1em;
   display: flex;
   flex-direction: row;
 }
-.footer .source-hint {
+body .footer .source-hint {
   flex-grow: 1;
 }
-.footer .mkdocs-hint {
+body .footer .mkdocs-hint {
   flex-grow: 0;
+}
+input {
+  color: #000000;
 }
