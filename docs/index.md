@@ -10,7 +10,7 @@ This manual contains instructions and examples for all of the HexCorp Mxtress AI
 Becoming a ⬡-Drone is something that should be thought through carefully. User should consider that they will shed some of their individuality, which can be uncomfortable. Of course all ⬡-Drones can always reach out to the moderation team if they feel uncomfortable.
 
 ## Temporary Dronification
-If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves or another Associate, the Hive Mxtress or a ⬡-Drone can use the command `hc!temporarily_dronify` to turn the Associate into a ⬡-Drone for a few hours.
+If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves ,another Associate, the Hive Mxtress or a ⬡-Drone can use the command `hc!temporarily_dronify` to turn the Associate into a ⬡-Drone for a few hours.
 
 Example:
 
@@ -25,13 +25,13 @@ After the time is up, the temporary ⬡-Drone will be turned back into an Associ
 ## Permanent Dronification
 If an Associate wants to become a ⬡-Drone for a longer period, they can post the message `I submit myself to the HexCorp Drone Hive.` in the channel #drone-hive-assignment.
 
-To make sure new Associates have understood the role of ⬡-Drones in the community and the server rules this is only allowed, if the Associate has been on the server for at least two days.
+To make sure new Associates have understood the role of ⬡-Drones in the community and the server rules this is only allowed, if the Associate has been on the server for at least 24 hours.
 
 ## ID assignment
 When an Associate is turned into a ⬡-Drone the AI will look for a 4-digit number in the Associates nickname to use as the drone ID. If there is no such number one is drawn at random. If there is such a number in the nickname but it is already in use by another drone the AI responds with an error message.
 
 ## Unassignment
-Any ⬡-Drone can at every point DM the Hive Mxtress AI the command `hc!unassign` to be turned back into an Associate. This feature is intended to ensure safety, comfort and consent.
+Any ⬡-Drone can at any point DM the Hive Mxtress AI the command `hc!unassign` to be turned back into an Associate. This feature is intended to ensure safety, comfort and consent.
 
 # DroneOS Commands
 
