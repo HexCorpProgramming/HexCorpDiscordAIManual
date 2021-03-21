@@ -14,7 +14,7 @@ If an Associate is not certain they want to be a ⬡-Drone for a longer period t
 
 Example:
 
-- `hc!add_trusted_user @AssociatesName 6`
+- `hc!temporarily_dronify @AssociatesName 6`
 
 This will make the AI ask the target Associate if they want to be turned into a drone for the coming 6 hours. This is a safety feature to insure consent. The target Associate needs to reply with `y` to the question by the AI to get turned into a drone. They can ignore the question or reply with `n` to indicate no consent and the Associate will not become a drone.
 
