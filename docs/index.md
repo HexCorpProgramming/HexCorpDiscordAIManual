@@ -105,6 +105,15 @@ Examples:
 
 - `hc!tei 0001` will toggle Identity Enforcement for ⬡-Drone 0001, turning it on if it was off, and off if it was on.
 
+## hc!toggle_drone_glitch
+Also known as: `hc!tdg`
+
+Allows Trusted Users to toggle the Glitch Mode on a ⬡-Drone. Glitched drones will have their text distorted and images they post subjected to heavy glitching.
+
+Examples:
+
+- `hc!tdg 0001` will toggle Glitch Mode for ⬡-Drone 0001, turning it on if it was off, and off if it was on.
+
 ### The Hive & Enforced Identity
 
 Within the hive channels all drones automatically have their identities enforced.
