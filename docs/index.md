@@ -114,6 +114,15 @@ Examples:
 
 - `hc!tdg 0001` will toggle Glitch Mode for ⬡-Drone 0001, turning it on if it was off, and off if it was on.
 
+## hc!toggle_battery_power
+Also known as: `hc!tbp`
+
+Allows Trusted Users to toggle the Battery Power on a ⬡-Drone. Drones that run on Battery Power will use up charge whenever they interact in chat. A ⬡-Drone running low on Battery Power will experience glitching and may even turn completely incapable of interacting in chat when its battery gets used up completely.
+
+To replenish the Battery Power a ⬡-Drone can be stored in the Storage Facility where it will be charged from empty to full in 2 hours. Shorter storage only replenishes a portion of that. For more information on this process read [Storage](#storage).
+
+- `hc!tbp 0001` will toggle Battery Power for ⬡-Drone 0001, turning it on if it was off, and off if it was on.
+
 ### The Hive & Enforced Identity
 
 Within the hive channels all drones automatically have their identities enforced.
