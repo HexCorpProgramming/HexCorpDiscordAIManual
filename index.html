@@ -89,6 +89,10 @@
         
         <li><a href="#hctoggle_enforce_identity">hc!toggle_enforce_identity</a></li>
         
+        <li><a href="#hctoggle_drone_glitch">hc!toggle_drone_glitch</a></li>
+        
+        <li><a href="#hctoggle_battery_power">hc!toggle_battery_power</a></li>
+        
         <li><a href="#hctoggle_id_prepending">hc!toggle_id_prepending</a></li>
         
         <li><a href="#hcdrone_status">hc!drone_status</a></li>
@@ -147,6 +151,7 @@
 <h1 id="-drones">⬡-Drones</h1>
 <p>⬡-Drones are the members of the server that have left behind their identity to become just another small part of the greater Hive. Drones join the Hive on their own volition and will always maintain themselves. This can mean that they leave the Hive again if that is better for them.</p>
 <p>Becoming a ⬡-Drone is something that should be thought through carefully. User should consider that they will shed some of their individuality, which can be uncomfortable. Of course all ⬡-Drones can always reach out to the moderation team if they feel uncomfortable.</p>
+<p>You may also come across drones that are marked as ⬢-Drone. These are drones that have one or more configurations in their DroneOS toggled on. For more information read <a href="#droneos-commands">DroneOS Commands</a>.</p>
 <h2 id="temporary-dronification">Temporary Dronification</h2>
 <p>If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves ,another Associate, the Hive Mxtress or a ⬡-Drone can use the command <code>hc!temporarily_dronify</code> to turn the Associate into a ⬡-Drone for a few hours.</p>
 <p>Example:</p>
@@ -165,6 +170,7 @@
 <p>Any ⬡-Drone can at any point DM the Hive Mxtress AI the command <code>hc!unassign</code> to be turned back into an Associate. This feature is intended to ensure safety, comfort and consent.</p>
 <h1 id="droneos-commands">DroneOS Commands</h1>
 <p>DroneOS commands are used to view or alert the operational parameters of a ⬡-Drone. You do not have to be a ⬡-Drone to use most of these commands, but they must be used <em>on</em> a ⬡-Drone.</p>
+<p>A drone that has at least one of these configuations enabled will be displayed as a ⬢-Drone.</p>
 <h2 id="speech-optimization">Speech Optimization</h2>
 <p>Speech optimization is a communication enhancement tool usable by ⬡-Drones. Associates do not have access to this functionality.</p>
 <p>A ⬡-Drone can convert a short, three digit Speech Optimzation code into a complete Speech Optimization message.</p>
@@ -212,6 +218,20 @@
 <p>Examples:</p>
 <ul>
 <li><code>hc!tei 0001</code> will toggle Identity Enforcement for ⬡-Drone 0001, turning it on if it was off, and off if it was on.</li>
+</ul>
+<h2 id="hctoggle_drone_glitch">hc!toggle_drone_glitch</h2>
+<p>Also known as: <code>hc!tdg</code></p>
+<p>Allows Trusted Users to toggle the Glitch Mode on a ⬡-Drone. Glitched drones will have their text distorted and images they post subjected to heavy glitching.</p>
+<p>Examples:</p>
+<ul>
+<li><code>hc!tdg 0001</code> will toggle Glitch Mode for ⬡-Drone 0001, turning it on if it was off, and off if it was on.</li>
+</ul>
+<h2 id="hctoggle_battery_power">hc!toggle_battery_power</h2>
+<p>Also known as: <code>hc!tbp</code></p>
+<p>Allows Trusted Users to toggle the Battery Power on a ⬡-Drone. Drones that run on Battery Power will use up charge whenever they interact in chat. A ⬡-Drone running low on Battery Power will experience glitching and may even turn completely incapable of interacting in chat when its battery gets used up completely.</p>
+<p>To replenish the Battery Power a ⬡-Drone can be stored in the Storage Facility where it will be charged from empty to full in 2 hours. Shorter storage only replenishes a portion of that. For more information on this process read <a href="#storage">Storage</a>.</p>
+<ul>
+<li><code>hc!tbp 0001</code> will toggle Battery Power for ⬡-Drone 0001, turning it on if it was off, and off if it was on.</li>
 </ul>
 <h3 id="the-hive-enforced-identity">The Hive &amp; Enforced Identity</h3>
 <p>Within the hive channels all drones automatically have their identities enforced.</p>
@@ -356,7 +376,7 @@ If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello
 
       <!--
       MkDocs version      : 1.1.2
-      Docs Build Date UTC : 2021-03-21 11:45:53.844755+00:00
+      Docs Build Date UTC : 2021-05-22 15:22:02.282172+00:00
       -->
     </div>
   </div>
