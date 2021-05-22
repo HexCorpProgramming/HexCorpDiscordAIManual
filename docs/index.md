@@ -9,6 +9,8 @@ This manual contains instructions and examples for all of the HexCorp Mxtress AI
 
 Becoming a ⬡-Drone is something that should be thought through carefully. User should consider that they will shed some of their individuality, which can be uncomfortable. Of course all ⬡-Drones can always reach out to the moderation team if they feel uncomfortable.
 
+You may also come across drones that are marked as ⬢-Drone. These are drones that have one or more configurations in their DroneOS toggled on. For more information read [DroneOS Commands](#droneos-commands).
+
 ## Temporary Dronification
 If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves ,another Associate, the Hive Mxtress or a ⬡-Drone can use the command `hc!temporarily_dronify` to turn the Associate into a ⬡-Drone for a few hours.
 
@@ -36,6 +38,8 @@ Any ⬡-Drone can at any point DM the Hive Mxtress AI the command `hc!unassign` 
 # DroneOS Commands
 
 DroneOS commands are used to view or alert the operational parameters of a ⬡-Drone. You do not have to be a ⬡-Drone to use most of these commands, but they must be used *on* a ⬡-Drone.
+
+A drone that has at least one of these configuations enabled will be displayed as a ⬢-Drone.
 
 ## Speech Optimization
 Speech optimization is a communication enhancement tool usable by ⬡-Drones. Associates do not have access to this functionality.
