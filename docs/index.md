@@ -35,6 +35,11 @@ When an Associate is turned into a ⬡-Drone the AI will look for a 4-digit numb
 ## Unassignment
 Any ⬡-Drone can at any point DM the Hive Mxtress AI the command `hc!unassign` to be turned back into an Associate. This feature is intended to ensure safety, comfort and consent.
 
+## Removing messages
+In several scenarios the AI will remove a drone's message and replace it with a modified message. As this modified message was not directly created by the drone but rather by the AI, the drone will not be able to remove it like it could remove one of its unmodified messages. To remove such a message the drone can react to the modified message with the 🗑️ (wastebasket) emote. The AI will then remove said message.
+
+This can not be used with messages from other drones or on messages that were not modified by the AI.
+
 # DroneOS Commands
 
 DroneOS commands are used to view or alert the operational parameters of a ⬡-Drone. You do not have to be a ⬡-Drone to use most of these commands, but they must be used *on* a ⬡-Drone.
