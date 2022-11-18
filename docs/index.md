@@ -51,7 +51,7 @@ Speech optimization is a communication enhancement tool usable by ⬡-Drones. As
 
 A ⬡-Drone can convert a short, three digit Speech Optimzation code into a complete Speech Optimization message.
 
-A [full list of Speech Optimization codes](https://www.hexcorp.net/drone-status-codes) can be found on the official HexCorp website.
+A [full list of Speech Optimization codes](https://www.hexcorp.net/drone-status-codes-v2) can be found on the official HexCorp website.
 
 Examples:
 
