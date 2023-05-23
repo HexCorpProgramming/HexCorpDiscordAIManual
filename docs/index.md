@@ -151,6 +151,7 @@ Examples:
 Allows Trusted Users, moderators and drones themselves to view information of relevant ⬡-Drones. This command is **DM only** and cannot be used in the HexCorp server.
 
 Information currently includes:
+
 - Optimization
 - ID Prepending
 - Identity Enforcement
