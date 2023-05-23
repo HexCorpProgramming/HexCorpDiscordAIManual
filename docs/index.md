@@ -12,7 +12,7 @@ Becoming a ⬡-Drone is something that should be thought through carefully. User
 You may also come across drones that are marked as ⬢-Drone. These are drones that have one or more configurations in their DroneOS toggled on. For more information read [DroneOS Commands](#droneos-commands).
 
 ## Temporary Dronification
-If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves ,another Associate, the Hive Mxtress or a ⬡-Drone can use the command `hc!temporarily_dronify` to turn the Associate into a ⬡-Drone for a few hours.
+If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves, another Associate, the Hive Mxtress or a ⬡-Drone can use the command `hc!temporarily_dronify` to turn the Associate into a ⬡-Drone for a few hours.
 
 Example:
 
@@ -84,6 +84,10 @@ Examples:
 
 This command cannot be used in the HexCorp server.
 
+After a ⬡-Drone uses `hc!add_trusted_user` on another user, that user will receive a direct message from the HexCorp Mxtress AI asking for consent to become a Trusted User. The user can reply to that question with `n` to reject the request or with `y` to agree to the request.
+
+After making a reply, the ⬡-Drone that started the request will be informed about what decision was made.
+
 ### Hive Mxtress as Trusted User
 
 The Hive Mxtress is regarded as a Trusted User for all drones within the Hive, as they are the one in charge of HexCorp and all of its assets. As such they can not be removed as a Trusted User.
@@ -144,13 +148,16 @@ Examples:
 
 ## hc!drone_status
 
-Allows Trusted Users to view information of relevant ⬡-Drones. This command is **DM only** and cannot be used in the HexCorp server.
+Allows Trusted Users, moderators and drones themselves to view information of relevant ⬡-Drones. This command is **DM only** and cannot be used in the HexCorp server.
 
 Information currently includes:
 - Optimization
 - ID Prepending
 - Identity Enforcement
-- Glitchiness levels.
+- Glitchiness levels
+- Battery status and level
+
+Additionally ⬡-Drones can see their own Trusted Users.
 
 Examples:
 
