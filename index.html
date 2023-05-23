@@ -155,7 +155,7 @@
 <p>Becoming a ⬡-Drone is something that should be thought through carefully. User should consider that they will shed some of their individuality, which can be uncomfortable. Of course all ⬡-Drones can always reach out to the moderation team if they feel uncomfortable.</p>
 <p>You may also come across drones that are marked as ⬢-Drone. These are drones that have one or more configurations in their DroneOS toggled on. For more information read <a href="#droneos-commands">DroneOS Commands</a>.</p>
 <h2 id="temporary-dronification">Temporary Dronification</h2>
-<p>If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves ,another Associate, the Hive Mxtress or a ⬡-Drone can use the command <code>hc!temporarily_dronify</code> to turn the Associate into a ⬡-Drone for a few hours.</p>
+<p>If an Associate is not certain they want to be a ⬡-Drone for a longer period they can make use of temporary dronification. The Associate themselves, another Associate, the Hive Mxtress or a ⬡-Drone can use the command <code>hc!temporarily_dronify</code> to turn the Associate into a ⬡-Drone for a few hours.</p>
 <p>Example:</p>
 <ul>
 <li><code>hc!temporarily_dronify @AssociatesName 6</code></li>
@@ -206,6 +206,8 @@
 <li><code>hc!remove_trusted_user 0002</code> will remove ⬡-Drone 0002 as a trusted user.</li>
 </ul>
 <p>This command cannot be used in the HexCorp server.</p>
+<p>After a ⬡-Drone uses <code>hc!add_trusted_user</code> on another user, that user will receive a direct message from the HexCorp Mxtress AI asking for consent to become a Trusted User. The user can reply to that question with <code>n</code> to reject the request or with <code>y</code> to agree to the request.</p>
+<p>After making a reply, the ⬡-Drone that started the request will be informed about what decision was made.</p>
 <h3 id="hive-mxtress-as-trusted-user">Hive Mxtress as Trusted User</h3>
 <p>The Hive Mxtress is regarded as a Trusted User for all drones within the Hive, as they are the one in charge of HexCorp and all of its assets. As such they can not be removed as a Trusted User.</p>
 <h2 id="hctoggle_speech_optimization">hc!toggle_speech_optimization</h2>
@@ -249,12 +251,14 @@ If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello
 <li><code>hc!tid 0001</code> will toggle ID Prepending for ⬡-Drone 0001, turning it on if it is off, and off if it is on.</li>
 </ul>
 <h2 id="hcdrone_status">hc!drone_status</h2>
-<p>Allows Trusted Users to view information of relevant ⬡-Drones. This command is <strong>DM only</strong> and cannot be used in the HexCorp server.</p>
+<p>Allows Trusted Users, moderators and drones themselves to view information of relevant ⬡-Drones. This command is <strong>DM only</strong> and cannot be used in the HexCorp server.</p>
 <p>Information currently includes:
 - Optimization
 - ID Prepending
 - Identity Enforcement
-- Glitchiness levels.</p>
+- Glitchiness levels
+- Battery status and level</p>
+<p>Additionally ⬡-Drones can see their own Trusted Users.</p>
 <p>Examples:</p>
 <ul>
 <li><code>hc!drone_status 0001</code> will return a formatted table of data, provided 0001 has authorized you as a trusted user.</li>
@@ -380,8 +384,8 @@ If a ⬡-Drone has ID prepending toggled on, a message like <code>"0001 :: Hello
     <div>
 
       <!--
-      MkDocs version      : 1.1.2
-      Docs Build Date UTC : 2022-01-29 18:40:03.111201+00:00
+      MkDocs version      : 1.4.3
+      Docs Build Date UTC : 2023-05-23 15:22:16.721621+00:00
       -->
     </div>
   </div>
