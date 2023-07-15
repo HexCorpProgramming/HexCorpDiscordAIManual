@@ -145,6 +145,8 @@ Also known as: `hc!tid`
 Allows Trusted Users to toggle whether or not a drone must prepend its messages with its ID.
 If a ⬡-Drone has ID prepending toggled on, a message like `"0001 :: Hello!"` would be allowed, but `"Hello!"` would be deleted.
 
+When using commands, ⬡-Drones should not use prepending. Commands always start with the prefix `hc!`. Adding the ID before that will lead to the command not working.
+
 Examples:
 
 - `hc!tid 0001` will toggle ID Prepending for ⬡-Drone 0001, turning it on if it is off, and off if it is on.
