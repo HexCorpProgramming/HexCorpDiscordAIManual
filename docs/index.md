@@ -76,10 +76,13 @@ Please do not harass other server members by adding them as Trusted Users. Only 
 
 Furthermore the development would like to stress that ⬡-Drones should only add users they inherently trust as Trusted Users. This feature is seen as a form of power exchange, that needs to be properly considered and negotiated.
 
+When refering to a user with spaces in their name, the name has to be enclosed with "quotation marks".
+
 Examples:
 
 - `hc!add_trusted_user 0002` will add ⬡-Drone 0002 as a trusted user.
 - `hc!add_trusted_user HumanFriend` will add associate "HumanFriend" as a trusted user.
+- `hc!add_trusted_user "User with spaces in the name"` will add associate "User with spaces in the name" as a trusted user.
 - `hc!remove_trusted_user 0002` will remove ⬡-Drone 0002 as a trusted user.
 
 This command cannot be used in the HexCorp server.
