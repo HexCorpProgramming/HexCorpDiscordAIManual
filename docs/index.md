@@ -44,12 +44,12 @@ This can not be used with messages from other drones or on messages that were no
 
 DroneOS commands are used to view or alert the operational parameters of a ⬡-Drone. You do not have to be a ⬡-Drone to use most of these commands, but they must be used *on* a ⬡-Drone.
 
-A drone that has at least one of these configuations enabled will be displayed as a ⬢-Drone.
+A drone that has at least one of these configurations enabled will be displayed as a ⬢-Drone.
 
 ## Speech Optimization
 Speech optimization is a communication enhancement tool usable by ⬡-Drones. Associates do not have access to this functionality.
 
-A ⬡-Drone can convert a short, three digit Speech Optimzation code into a complete Speech Optimization message.
+A ⬡-Drone can convert a short, three digit Speech Optimization code into a complete Speech Optimization message.
 
 A [full list of Speech Optimization codes](https://www.hexcorp.net/drone-status-codes) can be found on the official HexCorp website.
 
@@ -76,7 +76,7 @@ Please do not harass other server members by adding them as Trusted Users. Only 
 
 Furthermore the development would like to stress that ⬡-Drones should only add users they inherently trust as Trusted Users. This feature is seen as a form of power exchange, that needs to be properly considered and negotiated.
 
-When refering to a user with spaces in their name, the name has to be enclosed with "quotation marks".
+When referring to a user with spaces in their name, the name has to be enclosed with "quotation marks".
 
 Examples:
 
@@ -216,7 +216,7 @@ The `self.protocols` define how a ⬡-Drone will maintain it. ⬡-Drone upkeep i
 
 ## The `domestic.protocols`
 
-The `domestic.protocols` define tasks that a ⬡-Drone will complete when maintaining its situated domestic environment. When obeying this protocol, a ⬡-Drone will be utilised as a cleaning and tidying resource. The ⬡-Drone could be perceived to be a maid or similar servant. It's immediate physical space and the management of it is its order. In its mind, it will constantly sort and prioritize its tasks.
+The `domestic.protocols` define tasks that a ⬡-Drone will complete when maintaining its situated domestic environment. When obeying this protocol, a ⬡-Drone will be utilized as a cleaning and tidying resource. The ⬡-Drone could be perceived to be a maid or similar servant. It's immediate physical space and the management of it is its order. In its mind, it will constantly sort and prioritize its tasks.
 
 ## The `productivity.protocols`
 
@@ -228,7 +228,7 @@ A ⬡-Drone reports any activities it wants to report to the hive using the `hc!
 
 * `hc!report domestic.protocols 15`
 
-This command here tells the Mxtress AI that the drone typing it out intends to obey the domestic.protcols for 15 minutes. Before the drone proceeds with its assigned tasks, it will be asked to elaborate on its intentions within this protocol. An example could be:
+This command here tells the Mxtress AI that the drone typing it out intends to obey the domestic.protocols for 15 minutes. Before the drone proceeds with its assigned tasks, it will be asked to elaborate on its intentions within this protocol. An example could be:
 
 * `0001 :: Drone 0001 will clean up its desk and wash all accumulated dishes.`
 
@@ -281,7 +281,7 @@ These commands are for exclusive use by the HexCorp moderation team.
 
 ## hc!emergency_release
 
-This command is used to deactivate all configurations on a drone. A ⬡-Drone may ask any moderator in chat, direct messages, or through the Moderation Interface bot to have their confugurations disabled for any reason.
+This command is used to deactivate all configurations on a drone. A ⬡-Drone may ask any moderator in chat, direct messages, or through the Moderation Interface bot to have their configurations disabled for any reason.
 
 # Hive Mxtress Commands
 
